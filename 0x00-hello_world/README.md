@@ -9,3 +9,5 @@
 3-name: Use gcc to compile source into 'cisfun' executable
 
 5-printf.c: Use 'printf' to output string to stdout
+
+6- size.c: Outputs byte sizes of native data types
