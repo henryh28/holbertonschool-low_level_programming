@@ -6,3 +6,6 @@
 
 4-puts.c: Use 'puts' to print string to stdout
 
+3-name: Use gcc to compile source into 'cisfun' executable
+
+5-printf.c: Use 'printf' to output string to stdout
