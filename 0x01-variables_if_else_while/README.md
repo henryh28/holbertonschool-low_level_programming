@@ -12,3 +12,5 @@
 
 6-print_numberz.c - Prints out the numbers from 0-9 using putchar, then print a newline chara cter at the end
 
+7-print_tebahpla.c - Prints the lowercase alphabet in reverse, with newline characterat the end
+
