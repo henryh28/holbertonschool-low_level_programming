@@ -18,6 +18,7 @@
 
 9-print_comb.c - Outputs the decimal characters with a comma and a white space in between each of the characters
 
+10-print_comb2.c - Outputs numbers from 00 - 99 with comma and white space in between
 
 
 
