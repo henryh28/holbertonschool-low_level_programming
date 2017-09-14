@@ -7,3 +7,7 @@
 4-print_alphabet.c - Prints the lowercase alphabet without the letter e or q. Print a newline character at the end of the string
 
 3-print_alphabets.c - Prints the lowercase alphabet first, then the uppercase alphabets, followed by a newline character
+
+5-print_numbers.c - Prints the numbers from 0-9, followed by a newline character
+
+
