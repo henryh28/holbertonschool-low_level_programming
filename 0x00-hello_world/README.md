@@ -11,3 +11,7 @@
 5-printf.c: Use 'printf' to output string to stdout
 
 6- size.c: Outputs byte sizes of native data types
+
+100-intel: Output C source file into Intel syntax assembly file
+
+101-quote.c: Use 'write' as altenative to 'printf' & 'puts' to output a string to stderr with an exit code of 1.,
