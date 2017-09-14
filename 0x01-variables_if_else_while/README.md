@@ -10,4 +10,5 @@
 
 5-print_numbers.c - Prints the numbers from 0-9, followed by a newline character
 
+6-print_numberz.c - Prints out the numbers from 0-9 using putchar, then print a newline chara cter at the end
 
