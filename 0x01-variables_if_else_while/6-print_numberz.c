@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: Print numbers from 0-9 using putchar
+ * main - Print numbers from 0-9 using putchar
  *
- * return: (0) successful execution
+ * Return: (0) successful execution
  */
 
 int main(void)

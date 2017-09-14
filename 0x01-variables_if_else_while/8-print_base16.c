@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: Print hexadecimal values using putchar
+ * main - Print hexadecimal values using putchar
  *
- * return: (0) successful execution
+ * Return: (0) successful execution
  */
 
 int main(void)

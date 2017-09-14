@@ -3,7 +3,7 @@
 /**
  * main - Outputs numbers from 00 to 99 with comma and space in between
  *
- * return: (0) Successful execution
+ * Return: (0) Successful execution
  */
 
 int main(void)

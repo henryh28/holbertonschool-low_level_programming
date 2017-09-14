@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: Use 'putchar' to print the lowercase alphabet with a newline
+ * main - Use 'putchar' to print the lowercase alphabet with a newline
  *
- * return: (0) successful execution
+ * Return: (0) successful execution
  */
 
 int main(void)

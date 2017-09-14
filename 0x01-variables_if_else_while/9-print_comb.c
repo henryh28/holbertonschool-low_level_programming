@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: Outputs decimal digits with a comma and space in between each number
+ * main - Outputs decimal digits with a comma and space in between each number
  *
- * return: (0) Successful execution
+ * Return: (0) Successful execution
  */
 
 int main(void)
