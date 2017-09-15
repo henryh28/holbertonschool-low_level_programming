@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - test
+ * main - Output sorted unique occurence of 3 digit combinations
  *
- * Description: stuff
+ * Description: 012,120,102,021,201 & 210 considered to be the same combination
  *
  * Return: (0) Success
  */
