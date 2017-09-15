@@ -25,3 +25,14 @@
 101-print_comb4.c - Modify 100.print_comb3.c to handle 3 digits
 
 102-print_comb5.c - Modify 100.print_comb3.c to hand 2 sets of 2 digits
+
+----------------------------------------------------------------
+
+
+![Seeing the bug after I pushed to master](http://ljdchost.com/nDmdJau.gif)
+
+
+
+
+
+
