@@ -29,7 +29,7 @@
 ----------------------------------------------------------------
 
 
-<p align"center">
+<p align="center">
    <img src="http://ljdchost.com/nDmdJau.gif"/>
    Seeing the bug after I pushed to git
 </p>
