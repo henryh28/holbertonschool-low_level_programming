@@ -10,28 +10,21 @@
 
 int main(void)
 {
-	int i, j, x, y, comma;
+	int i, j, comma;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			for (x = i; x <= 9; x++)
-			{
-				for (y = j + 1; y <= 9; y++)
-				{
-					comma == 0 ? comma = 1 : putchar(',') && putchar(' ');
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(x + '0');
-					putchar(y + '0');
-				}
-			}
+			comma == 0 ? comma = 1 : putchar(',') && putchar(' ');
+
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
 		}
 	}
-
-
 	putchar('\n');
 	return (0);
 }
