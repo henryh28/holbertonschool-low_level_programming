@@ -30,7 +30,7 @@
 
 
 <p align="center">
-   <img src="http://ljdchost.com/nDmdJau.gif"/>
+   <img src="http://ljdchost.com/nDmdJau.gif"/><br>
    Seeing the bug after I pushed to git
 </p>
 
