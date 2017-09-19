@@ -18,4 +18,6 @@
 
 9-times_table.c - Print out the 9x9 multiplication table beginning with 0
 
+10-add.c - Adds the 2 integer arguments together and return the result
+
 
