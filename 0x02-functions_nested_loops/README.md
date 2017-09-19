@@ -10,6 +10,9 @@
 
 5-sign.c - Prints the +/- sign of the argument, if any
 
+6-abs.c - Prints absolute value of function argument
 
+7-print_last_digit.c - Print/return absolute value of last digit of argument
 
+8-24_hours.c - Print 24 hours worth of time in incrementing seconds
 
