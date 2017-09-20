@@ -6,14 +6,12 @@
  * Return: (0) Success
  */
 
-
 int main(void)
 {
-	long int x, y, z, sum;
+	int x, y, z, sum = 0;
 
 	x = 1;
 	y = 2;
-	z = 0;
 	sum = 2;
 
 	while (z <= 4000000)
@@ -28,7 +26,7 @@ int main(void)
 			sum += z;
 		}
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
