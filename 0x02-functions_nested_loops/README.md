@@ -22,3 +22,5 @@
 
 11-print_to_98.c - Prints sequence of number from argument value to 98
 
+100-times_table.c - Prints user defined multiplication table from range 0-15
+
