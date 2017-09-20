@@ -30,5 +30,5 @@
 
 103-fibonacci.c - Calculate and display sum of even fibonacci numbers under 4,000,000
 
-104-fibonacci.c - Print the first 100 fibonacci number
+104-fibonacci.c - Print the first 98 fibonacci number
 
