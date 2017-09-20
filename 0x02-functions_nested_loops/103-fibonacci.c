@@ -9,14 +9,14 @@
 
 int main(void)
 {
-	int i;
 	long int x, y, z, sum;
 
 	x = 1;
 	y = 2;
+	z = 0;
 	sum = 2;
 
-	for (i = 0; i <= 4000000; i++)
+	while (z <= 4000000)
 	{
 		z = x + y;
 
