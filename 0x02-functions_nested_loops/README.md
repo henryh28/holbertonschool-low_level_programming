@@ -25,3 +25,6 @@
 100-times_table.c - Prints user defined multiplication table from range 0-15
 
 101-natural.c - Fizzbang alternative
+
+102-fibonacci.c - Display the first 50 fibonacci numbers starting with 1 & 2
+
