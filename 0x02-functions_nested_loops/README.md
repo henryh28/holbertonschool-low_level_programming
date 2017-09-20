@@ -28,3 +28,4 @@
 
 102-fibonacci.c - Display the first 50 fibonacci numbers starting with 1 & 2
 
+103-fibonacci.c - Calculate and display sum of even fibonacci numbers under 4,000,000
