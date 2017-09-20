@@ -14,6 +14,7 @@ int main(void)
 
 	x = 1;
 	y = 2;
+	sum = 2;
 
 	for (i = 0; i <= 4000000; i++)
 	{
@@ -22,7 +23,7 @@ int main(void)
 		x = y;
 		y = z;
 
-		if (y % 2 == 0)
+		if (z % 2 == 0)
 		{
 			sum += z;
 		}
