@@ -12,4 +12,11 @@
 
 6-print_line.c         - Print an underscore a user specified # of times
 
+7-print_diagonal.c     - Print a '\' after (argument - 1) numberof spaces
+
+8-print_square.c       - Print a Square whose width is user defined
+
+9-fizz_buzz.c          - Classic programming exercise
+
+
 
