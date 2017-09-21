@@ -23,6 +23,7 @@ int main(void)
 		y = z;
 	}
 
+
 	putchar('\n');
 	return (0);
 }
