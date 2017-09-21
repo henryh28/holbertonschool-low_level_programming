@@ -1,5 +1,10 @@
-0-isupper.c - Check if function argument is uppercase letters
+0-isupper.c       - Check if function argument is uppercase letters
 
+1-isdigit.c       - Check if function argument is a digit
+
+2-mul.c           - Return results of multiplying 2 integer arguments
+
+3-print_numbers.c - Prints 0-9 to stdout followed by newline
 
 
 
