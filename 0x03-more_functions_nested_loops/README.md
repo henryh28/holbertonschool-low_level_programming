@@ -18,5 +18,6 @@
 
 9-fizz_buzz.c          - Classic programming exercise
 
+10-print_triangle.c    - Modification of 8-print_square, but with triangle
 
 
