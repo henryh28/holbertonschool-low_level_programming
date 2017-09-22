@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * print_number - Print out user supplied numbers
  *
@@ -7,7 +7,6 @@
  *
  * Return:        None
  */
-
 
 void print_number(int n)
 {
