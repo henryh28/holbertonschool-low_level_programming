@@ -18,5 +18,5 @@ int main(void)
 		target % divisor != 0 ? divisor++ : (target = target / divisor);
 	}
 	printf("%lu\n", target);
-	return (target);
+	return (0);
 }
