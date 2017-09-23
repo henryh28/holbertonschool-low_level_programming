@@ -10,44 +10,28 @@
 
 void print_number(int n)
 {
-	int decimal, print_digit, remaining, check;
-
-	decimal = 1;
+	int reverse = 0, depth = 0, i, output;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
 	}
-	else if (n == 0)
+
+	while (n != 0)
 	{
-		_putchar(n + '0');
-		return;
+		reverse *= 10;
+		reverse += (n % 10);
+		n /= 10;
+		depth++;
 	}
 
-	while (n / decimal > 9)
-	{
-		decimal *= 10;
-		check = n / (decimal / 10);
-	}
+	depth = depth == 0 ? 1 : depth;
 
-	print_digit = n / decimal;
-	remaining = n % decimal;
-
-	if (check % 10 == 0)
+	for (i = 0; i < depth; i++)
 	{
-		_putchar(print_digit + '0');
-		_putchar(print_digit / 10 + '0');
-		print_number(remaining);
-	}
-	else if (remaining > 9)
-	{
-		_putchar(print_digit + '0');
-		print_number(remaining);
-	}
-	else if (remaining != 0)
-	{
-		_putchar(print_digit + '0');
-		_putchar(remaining + '0');
+		output = reverse % 10;
+		_putchar(output + '0');
+		reverse /= 10;
 	}
 }
