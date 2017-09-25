@@ -1,5 +1,3 @@
-#include "holberton.h"
-
 /**
  * reset_to_98 - Use pointer to update value of int to 98
  *
