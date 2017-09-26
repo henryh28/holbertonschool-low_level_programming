@@ -10,4 +10,4 @@
 
 5-rev_string.c     - Function that reverses a string
 
-
+6-puts2.c          - Print out every other character of a string
