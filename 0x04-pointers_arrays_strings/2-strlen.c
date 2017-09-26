@@ -1,7 +1,7 @@
 /**
  * _strlen      - Return the length of a string argument
  *
- * @*s:         - Pointer to string variable whose length needs to be returned
+ * @s:         - Pointer to string variable whose length needs to be returned
  *
  * Return:      - Length of string variable that is pointed to by pointer
  */

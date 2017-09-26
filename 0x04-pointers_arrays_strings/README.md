@@ -7,3 +7,7 @@
 3-puts.c           - Prints a string followed by a newline
 
 4-print_rev.c      - Prints a string in reverse followed by a newline
+
+5-rev_string.c     - Function that reverses a string
+
+
