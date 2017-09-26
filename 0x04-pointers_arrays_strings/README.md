@@ -16,4 +16,5 @@
 
 8-print_array.c    - Print n elements of an array
 
+9-strcpy.c         - Copy data of pointed at string to pointed at buffer
 
