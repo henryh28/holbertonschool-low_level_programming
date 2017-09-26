@@ -2,5 +2,7 @@
 
 1-swap.c           - Swap the value of 2 function parameters using pointers
 
+2-strlen.c         - Return the length of a string
+
 
 
