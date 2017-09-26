@@ -14,5 +14,6 @@
 
 7-puts_half.c      - Print out half of a string, followed by a newline
 
+8-print_array.c    - Print n elements of an array
 
 
