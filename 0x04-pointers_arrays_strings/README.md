@@ -4,5 +4,5 @@
 
 2-strlen.c         - Return the length of a string
 
-
+3-puts.c           - Prints a string followed by a newline
 
