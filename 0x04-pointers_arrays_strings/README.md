@@ -18,3 +18,4 @@
 
 9-strcpy.c         - Copy data of pointed at string to pointed at buffer
 
+100-atoi.c         - Custom implementation of atoi
