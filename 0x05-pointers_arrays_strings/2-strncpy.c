@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * strncpy   - Copies one string into another string
+ * _strncpy   - Copies one string into another string
  *
  * @dest:      The string to be copied into and returned
  * @src:       The string to be copied
@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 	}
 
-	if (n > i)
+	for ( ; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
