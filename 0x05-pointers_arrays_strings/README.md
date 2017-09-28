@@ -6,6 +6,7 @@
 
 3-strcmp.c     - Compares two strings
 
+4-rev_aray.c   - Reverses the content of an array of integers
 
 
 
