@@ -4,6 +4,7 @@
 
 2-strncpy.c    - Copies a string
 
+3-strcmp.c     - Compares two strings
 
 
 
