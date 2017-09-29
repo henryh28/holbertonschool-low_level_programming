@@ -12,4 +12,10 @@
 
 6-cap_string.c     - Capitalize all words of a string
 
+7-leet.c           - Convert string to 1337 5p34k
+
+
+
+
+
 
