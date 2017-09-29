@@ -8,51 +8,24 @@
  * Return:   Pointer to the converted string
  */
 
-struct dictionary
-{
-	char key;
-	char value;
-};
-
-
 char *leet(char *s)
 {
-	int i, j, hash_size = 10;
+	int i, j;
 
-	struct dictionary leet[hash_size];
-
-	leet[0].key = 'a';
-	leet[0].value = '4';
-	leet[1].key = 'A';
-	leet[1].value = '4';
-	leet[2].key = 'e';
-	leet[2].value = '3';
-	leet[3].key = 'E';
-	leet[3].value = '3';
-	leet[4].key = 'o';
-	leet[4].value = '0';
-	leet[5].key = 'O';
-	leet[5].value = '0';
-	leet[6].key = 't';
-	leet[6].value = '7';
-	leet[7].key = 'T';
-	leet[7].value = '7';
-	leet[8].key = 'l';
-	leet[8].value = '1';
-	leet[9].key = 'L';
-	leet[9].value = '1';
+	char key[] = "aAeEoOtTlL";
+	char value[] = "4433007711";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < hash_size; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == leet[j].key)
+			if (s[i] == key[j])
 			{
-				s[i] = leet[j].value;
+				s[i] = value[j];
 			}
 		}
-
 	}
 
 	return (s);
 }
+
