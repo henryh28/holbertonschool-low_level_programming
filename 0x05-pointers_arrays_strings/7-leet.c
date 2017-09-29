@@ -8,6 +8,12 @@
  * Return:   Pointer to the converted string
  */
 
+struct dictionary
+{
+	char key;
+	char value;
+};
+
 
 char *leet(char *s)
 {
