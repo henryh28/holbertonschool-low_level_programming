@@ -14,6 +14,7 @@
 
 7-leet.c           - Convert string to 1337 5p34k
 
+8-rot13.c          - Modify leet.c perform rot13 encryption
 
 
 
