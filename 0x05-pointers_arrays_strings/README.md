@@ -10,5 +10,6 @@
 
 5-string_toupper.c - Converts all lowerse letter of a string to uppercase
 
+6-cap_string.c     - Capitalize all words of a string
 
 
