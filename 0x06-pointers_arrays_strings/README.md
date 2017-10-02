@@ -4,7 +4,7 @@
 
 2-strchr.c    - Locate presence of a character in string argument
 
-
+3-strspn.c    - Search a string for a set of bytes
 
 
 
