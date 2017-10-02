@@ -6,6 +6,7 @@
 
 3-strspn.c    - Search a string for a set of bytes
 
+4-strpbrk.c   - Search a string for any of a set of bytes
 
 
 
