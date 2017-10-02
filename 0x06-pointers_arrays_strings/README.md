@@ -2,6 +2,8 @@
 
 1-memcpy.c    - Copies n byte from source string into destination string
 
+2-strchr.c    - Locate presence of a character in string argument
+
 
 
 
