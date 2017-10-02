@@ -8,6 +8,7 @@
 
 4-strpbrk.c   - Search a string for any of a set of bytes
 
+5-strstr.c    - Fint and return 1st occurence of substring in string
 
 
 
