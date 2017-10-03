@@ -12,6 +12,8 @@
 
 7-print_chessboard.c - Print a chessboard
 
+8-print_diagsums     - Print the sums of 2 diagonals of a square matrix of int
+
 
 
 
