@@ -12,9 +12,9 @@
 
 7-print_chessboard.c - Print a chessboard
 
-8-print_diagsums     - Print the sums of 2 diagonals of a square matrix of int
+8-print_diagsums.c   - Print the sums of 2 diagonals of a square matrix of int
 
-
+9-set_string.c       - Set the value of a pointer to a char
 
 
 
