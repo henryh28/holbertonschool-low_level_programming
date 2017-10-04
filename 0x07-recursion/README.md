@@ -12,5 +12,6 @@
 
 6-is_prime_number.c     - Determine if integer argument is a prime number
 
+7-is_palindrome.c       - Determine if string argument is a palindrome
 
 
