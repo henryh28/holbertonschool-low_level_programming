@@ -8,6 +8,7 @@
 
 4-power_recursion.c     - Return the value of x raised to the power of y
 
+5-sqrt_recursion.c      - Find and return natural square root of a number
 
 
 
