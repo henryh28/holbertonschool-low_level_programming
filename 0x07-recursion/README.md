@@ -4,6 +4,7 @@
 
 2-strlen_recursion.c    - Return the length of a string
 
+3-factorial.c           - Return factorial of the number argument
 
 
 
