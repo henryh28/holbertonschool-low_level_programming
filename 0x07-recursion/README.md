@@ -6,6 +6,8 @@
 
 3-factorial.c           - Return factorial of the number argument
 
+4-power_recursion.c     - Return the value of x raised to the power of y
+
 
 
 
