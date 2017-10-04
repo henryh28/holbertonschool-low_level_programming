@@ -10,7 +10,7 @@
 
 5-sqrt_recursion.c      - Find and return natural square root of a number
 
-
+6-is_prime_number.c     - Determine if integer argument is a prime number
 
 
 
