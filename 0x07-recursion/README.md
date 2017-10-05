@@ -14,4 +14,5 @@
 
 7-is_palindrome.c       - Determine if string argument is a palindrome
 
-
+100-wildcmp.c           - Determine if 2 strings can be considered identical with the 
+                          inclusion of '*' as wildcard
