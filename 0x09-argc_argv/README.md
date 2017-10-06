@@ -7,3 +7,6 @@
 3-mul.c          - Output result of multiplying 2 arguments passed to program
 
 4-add.c          - Output result of adding arguments passed to program
+
+100-change.c     - Outputs minimum number of coins needed to make change for 
+                   integer argument
