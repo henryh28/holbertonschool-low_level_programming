@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * main     - Outputs this program's name
@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	if (argc)
 	{
-		_puts(*argv);
+		printf("%s\n", *argv);
 	}
 	return (0);
 }
