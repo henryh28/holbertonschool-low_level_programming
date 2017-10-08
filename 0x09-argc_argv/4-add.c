@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * main   - Outputs the sum of the arguments used to run this program
@@ -26,7 +27,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) != 0)
+			if (strspn(argv[i], "01234567890") == strlen(argv[i]))
 			{
 				sum += atoi(argv[i]);
 			}
@@ -36,7 +37,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-       	}
+	}
 
 	printf("%d\n", sum);
 	return (0);
