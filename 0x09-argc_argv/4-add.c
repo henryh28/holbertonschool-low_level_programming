@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
 
 /**
@@ -13,7 +12,6 @@
  *          (1) Error.  Non numeric arguments used
  */
 
-
 int main(int argc, char **argv)
 {
 	int i = 1, sum = 0;
@@ -23,19 +21,17 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	else
+
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		if (strspn(argv[i], "01234567890") == strlen(argv[i]))
 		{
-			if (strspn(argv[i], "01234567890") == strlen(argv[i]))
-			{
-				sum += atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			sum += atoi(argv[i]);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
 		}
 	}
 
