@@ -4,8 +4,8 @@
 /**
  * free_grid     - Free up memory used by 2d array
  *
- * @grid         - The 2d array to be removed
- * @height       - Number of rows for 2d array to be removed
+ * @grid:        - The 2d array to be removed
+ * @height:      - Number of rows for 2d array to be removed
  *
  * Return:       - None
  */
