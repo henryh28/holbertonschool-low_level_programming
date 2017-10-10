@@ -7,5 +7,6 @@
 
 3-alloc_grid.c       - Create a 2d array of integers
 
+4-free_grid.c        - Frees up memory used by 2d array from 3-alloc_grid.c
 
 
