@@ -25,15 +25,18 @@ char *_strdup(char *str)
 
 	length = i;
 
-	ptr_char = malloc(sizeof(char) * length);
+	ptr_char = malloc(sizeof(char) * length + 1);
 
-	if (ptr_char != NULL)
+	if (ptr_char == NULL)
 	{
-		for (i = 0; i <= length; i++)
-		{
-			ptr_char[i] = str[i];
-		}
+		return (NULL);
 	}
+
+	for (i = 0; i <= length; i++)
+	{
+		ptr_char[i] = str[i];
+	}
+	ptr_char[i] = '\0';
 
 	return (ptr_char);
 }
