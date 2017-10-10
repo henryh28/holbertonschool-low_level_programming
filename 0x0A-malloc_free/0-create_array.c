@@ -23,10 +23,16 @@ char *create_array(unsigned int size, char c)
 
 	ptr_char = malloc(sizeof(c) * size);
 
+	if (ptr_char == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; i < size; i++)
 	{
 		ptr_char[i] = c;
 	}
 
-	return (ptr_char != NULL ? ptr_char : NULL);
+
+	return (ptr_char);
 }
