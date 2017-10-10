@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		;
 	length_2 = i;
 
-	ptr_char = malloc(sizeof(char) * (length_1 + length_2));
+	ptr_char = malloc(sizeof(char) * (length_1 + length_2) + 1);
 
 	if (ptr_char == NULL)
 	{
@@ -45,6 +45,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		ptr_char[i] = i < length_1 ? s1[i] : s2[i - length_1];
 	}
+	ptr_char[i] = '\0';
 
 	return (ptr_char);
 }
