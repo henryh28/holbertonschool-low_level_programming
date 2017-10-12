@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
 		;
 
-	for (s2_length = 0; s1[s2_length] != '\0'; s2_length++)
+	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++)
 		;
 
 	if (n >= s2_length)
