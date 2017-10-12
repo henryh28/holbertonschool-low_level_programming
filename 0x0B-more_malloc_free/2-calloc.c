@@ -3,8 +3,8 @@
 /**
  * _calloc   - Allocate memory and initialize all cells with 0
  *
- * @nmemb:     size of data type
- * @size:      Number of @nmemb sized memory to allocate
+ * @nmemb:     Number of @size sized data
+ * @size:      Size of Data type
  *
  * Return:     Pointer to allocated memory that is initialized to 0
  */
@@ -26,9 +26,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	while (size--)
+	while (nmemb--)
 	{
-		ptr[size] = 0;
+		ptr[nmemb] = 0;
 	}
 
 	return (ptr);
