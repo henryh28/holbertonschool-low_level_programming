@@ -3,3 +3,5 @@
 1-string_nconcat.c    - Concatenates 2 string arguments by n bytes
 
 2-calloc.c            - Allocate and initialize memory segment to 0
+
+3-array_range.c       - Allocate and initialize memory based on int arguments
