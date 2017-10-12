@@ -5,3 +5,7 @@
 2-calloc.c            - Allocate and initialize memory segment to 0
 
 3-array_range.c       - Allocate and initialize memory based on int arguments
+
+100-realloc.c         - Make a copy of ptr argument and expand or truncate as 
+                        necessary based on size of integer argument
+
