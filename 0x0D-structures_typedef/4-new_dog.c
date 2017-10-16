@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 
+
 /**
  * arg_copy  -   Make a copy of passed in argument
  *
@@ -13,6 +14,11 @@ char *arg_copy(char *source)
 {
 	char *ptr;
 	int i = 0, length = 0;
+
+	if (source == NULL)
+	{
+		return (NULL);
+	}
 
 	for (length = 0; source[length] != '\0'; length++)
 		;
@@ -55,17 +61,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	puppy = malloc(sizeof(dog_t));
-
 	if (puppy == NULL)
 	{
-		free(puppy);
 		return (NULL);
 	}
 
 	name_copy = arg_copy(name);
 	if (name_copy == NULL)
 	{
-		free(name_copy);
 		free(puppy);
 		return (NULL);
 	}
@@ -76,7 +79,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	owner_copy = arg_copy(owner);
 	if (owner_copy == NULL)
 	{
-		free(owner_copy);
+		free(puppy->name);
 		free(puppy);
 		return (NULL);
 	}
