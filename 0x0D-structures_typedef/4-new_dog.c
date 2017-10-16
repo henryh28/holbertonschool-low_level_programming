@@ -24,7 +24,7 @@ char *arg_copy(char *source)
 		return (NULL);
 	}
 
-	for (i = 0; i < length; i++)
+	for (i = 0; source[i] != '\0'; i++)
 	{
 		ptr[i] = source[i];
 	}
@@ -58,30 +58,29 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (puppy == NULL)
 	{
+		free(puppy);
 		return (NULL);
 	}
 
 	name_copy = arg_copy(name);
 	if (name_copy == NULL)
 	{
+		free(name_copy);
+		free(puppy);
 		return (NULL);
 	}
-	else
-	{
-		puppy->name = name_copy;
-	}
+	puppy->name = name_copy;
 
 	puppy->age = age;
 
 	owner_copy = arg_copy(owner);
 	if (owner_copy == NULL)
 	{
+		free(owner_copy);
+		free(puppy);
 		return (NULL);
 	}
-	else
-	{
-		puppy->owner = owner_copy;
-	}
+	puppy->owner = owner_copy;
 
 	return (puppy);
 }
