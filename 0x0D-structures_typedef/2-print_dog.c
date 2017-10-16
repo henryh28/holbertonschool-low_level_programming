@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * printdog     - Outputs a variable of type struct dog
+ * print_dog     - Outputs a variable of type struct dog
  *
  * @d:            Variable of type struct dog to be printed
  *
