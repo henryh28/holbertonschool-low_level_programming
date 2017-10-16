@@ -1,5 +1,39 @@
 #include <stdlib.h>
 #include "dog.h"
+#include <stdio.h>
+
+/**
+ * arg_copy  -   Make a copy of passed in argument
+ *
+ * @source:      Data to make copy of
+ *
+ * Return:       Pointer to memory segment containing copy of argument data
+ */
+
+char *arg_copy(char *source)
+{
+	char *ptr;
+	int i = 0, length = 0;
+
+	for (length = 0; source[length] != '\0'; length++)
+		;
+
+	ptr = malloc(sizeof(char) * (length + 1));
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < length; i++)
+	{
+		ptr[i] = source[i];
+	}
+	ptr[i] = '\0';
+
+	return (ptr);
+}
+
 
 /**
  * new_dog     - Create a new dog variable
@@ -11,12 +45,9 @@
  * Return:       Pointer to new dog variable
  */
 
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *puppy;
-	int i = 0, name_length = 0, owner_length = 0;
-	char *name_copy, *owner_copy;
 
 	if (name == NULL)
 	{
@@ -29,29 +60,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	for (name_length = 0; name[name_length] != '\0'; name_length++)
-		;
-	for (owner_length = 0; owner[owner_length] != '\0'; owner_length++)
-		;
-	name_copy = malloc(sizeof(char) * name_length);
-	owner_copy = malloc(sizeof(char) * owner_length);
-	for (i = 0; i < name_length; i++)
-	{
-		name_copy[i] = name[i];
-	}
-	for (i = 0; i < owner_length; i++)
-	{
-		owner_copy[i] = owner[i];
-	}
-
 	puppy = malloc(sizeof(dog_t));
+
 	if (puppy == NULL)
 	{
 		return (NULL);
 	}
-	puppy->name = name_copy;
+
+	puppy->name = arg_copy(name);
 	puppy->age = age;
-	puppy->owner = owner_copy;
+	puppy->owner = arg_copy(owner);
 
 	return (puppy);
 }
