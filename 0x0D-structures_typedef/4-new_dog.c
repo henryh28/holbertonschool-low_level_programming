@@ -29,6 +29,7 @@ char *arg_copy(char *source)
 		ptr[i] = source[i];
 	}
 
+	ptr[i] = '\0';
 	return (ptr);
 }
 
