@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include <stdio.h>
 
 /**
  * main   - Outputs the name of the file that the program was compiled from
@@ -9,14 +9,7 @@
 
 int main(void)
 {
-	int i = 0;
-
-	for (i = 0; __FILE__[i] != '\0'; i++)
-	{
-		_putchar(__FILE__[i]);
-	}
-
-	_putchar('\n');
+	puts(__FILE__);
 
 	return (0);
 }
