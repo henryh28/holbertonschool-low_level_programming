@@ -4,3 +4,5 @@
 
 2-print_strings.c    - Print string arguments followed by a newline
 
+3-print_all.c        - Print function arguments as char, int, float, or char*
+

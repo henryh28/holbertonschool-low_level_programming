@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 /**
  * print_numbers     - Print numeric arguments with @separator in between
  *
  * @separator:         Character used to separate the arguments when printing
  * @n:                 Number of integers passed to the function
- *
  */
 
 
