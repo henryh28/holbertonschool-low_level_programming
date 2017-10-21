@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
 
 /**
@@ -14,6 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 	va_list ap;
+	char *string;
 
 	va_start(ap, n);
 
@@ -27,7 +28,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 		}
 
-		printf("%s", va_arg(ap, char*));
+		string = va_arg(ap, char*);
+		printf("%s", string != NULL ? string : "(nil)");
 	}
 
 	va_end(ap);
