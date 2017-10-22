@@ -7,12 +7,11 @@
  * print_char    - Print out a character
  *
  * @ap:            list containing program arguments
- * @v:             Value to be printed
  */
 
-void print_char(va_list ap, char v)
+void print_char(va_list ap)
 {
-	printf("%c", v);
+	printf("%c", va_arg(ap, int));
 }
 
 
@@ -20,12 +19,11 @@ void print_char(va_list ap, char v)
  * print_int     - Print out an integer
  *
  * @ap:            list containing program arguments
- * @v:             Value to be printed
  */
 
-void print_int(va_list ap, int v)
+void print_int(va_list ap)
 {
-
+	printf("%d", va_arg(ap, int));
 }
 
 
@@ -33,12 +31,11 @@ void print_int(va_list ap, int v)
  * print_float   - Print out a float
  *
  * @ap:            list containing program arguments
- * @v:             Value to be printed
  */
 
-void print_float(va_list ap, float v)
+void print_float(va_list ap)
 {
-
+	printf("%f", va_arg(ap, double));
 }
 
 
@@ -46,12 +43,11 @@ void print_float(va_list ap, float v)
  * print_string  - Print out a string
  *
  * @ap:            list containing program arguments
- * @v:             Value to be printed
  */
 
-void print_string(va_list ap, char *v)
+void print_string(va_list ap)
 {
-
+	printf("%s", va_arg(ap, char *));
 }
 
 
@@ -66,7 +62,7 @@ void print_string(va_list ap, char *v)
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, n = 0;
+	int i = 0, j = 0, length = 0, comma = 0;
 	va_list ap;
 
 	hash_t hash[] = {
@@ -74,19 +70,29 @@ void print_all(const char * const format, ...)
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string}
-	}
+	};
+
+	length = sizeof(hash) / sizeof(*hash);
 
 	va_start(ap, format);
 
 	while (format[i] != '\0')
 	{
+		j = 0;
 
+		while (j < length)
+		{
+			if (format[i] == hash[j].format)
+			{
+				comma == 0 ? comma = 1 : printf(", ");
+				hash[j].function(ap);
+				j++;
+				break;
+			}
+			j++;
+		}
 		i++;
 	}
-
 	va_end(ap);
-
-	printf("Format length: %d\n", i);
-
-
+	printf("\n");
 }
