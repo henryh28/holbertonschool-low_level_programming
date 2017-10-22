@@ -68,7 +68,8 @@ void print_string(va_list ap)
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0, length = 0, comma = 0;
+	int i = 0, j = 0, length = 0;
+	char *comma = "";
 	va_list ap;
 
 	hash_t hash[] = {
@@ -90,8 +91,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == hash[j].format)
 			{
-				comma == 0 ? comma = 1 : printf(", ");
+				printf("%s", comma);
 				hash[j].function(ap);
+				comma = ", ";
 				j++;
 				break;
 			}
