@@ -4,9 +4,9 @@ _printf() is a c program that recreates some of the functionalities of the print
 
 Like printf, _printf will interpolate data into a base string as needed.  Currently _printf supports the following types of data.  Syntax for triggering interpolation is the same as in standard printf. (Insert one of the flags mentioned below within a string to be printed, then follow the string with the argument you wish to be interpolated into the main string)
 
-## Flags
 
 |  **Flag**    |              ** Data **                  |
+|--------------|------------------------------------------|
 |     %c       |    Prints a single character             |
 |     %s       |    Prints a string                       |
 |     %d       |    Prints an integer number              |
