@@ -31,7 +31,7 @@ unsigned int _strlen(const char *s)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *current = *head;
+	list_t *current = *head, *new_node;
 
 	if (str == NULL)
 	{
@@ -54,10 +54,17 @@ list_t *add_node_end(list_t **head, const char *str)
 		{
 			current = current->next;
 		}
-		current->next = malloc(sizeof(list_t));
-		current->next->str = strdup(str);
-		current->next->len = _strlen(str);
-		current->next->next = NULL;
+
+		new_node = malloc(sizeof(list_t));
+		if (new_node == NULL)
+		{
+			return (NULL);
+		}
+
+		current->next = new_node;
+		new_node->str = strdup(str);
+		new_node->len = _strlen(str);
+		new_node->next = NULL;
 	}
 	return (current);
 }
