@@ -1,11 +1,18 @@
 #include "lists.h"
 
+/**
+ * _strlen     - Returns length of @s
+ *
+ * @s:           String argument to find the length of
+ *
+ * Return:       Length of @s
+ */
 
 unsigned int _strlen(const char *s)
 {
 	int i = 0;
 
-	for (i = 0; s[i] !='\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 		;
 
 	return (i);
@@ -25,7 +32,8 @@ unsigned int _strlen(const char *s)
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-        new_node = malloc(sizeof(list_t));
+
+	new_node = malloc(sizeof(list_t));
 
 	if (new_node == NULL)
 	{
