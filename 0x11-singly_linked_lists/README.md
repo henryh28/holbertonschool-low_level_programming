@@ -4,4 +4,5 @@
 
 2-add_node.c     - Add a node to the beginning of a singly linked list
 
+3-add_node_end.c - Add a node to the end of a singly linked list
 
