@@ -33,6 +33,11 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *current = *head;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	if (current == NULL)
 	{
 		current = malloc(sizeof(list_t));
