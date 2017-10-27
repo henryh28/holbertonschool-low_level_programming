@@ -1,6 +1,9 @@
 ## Singly Linked Lists 
 
-The following are exercises which involve working with singly linked lists in C.   Primary purpose is to engender familiarity with creating, traversing, and deleting nodes of the list.
+The following are exercises which involve working with singly linked lists in C.   
+
+The primary purpose for these exercises is to engender familiarity with creating, traversing, and deleting nodes in a singly linked list.
+
 
 | **Filename**     |              ** Description **                     |
 |------------------|----------------------------------------------------|
@@ -10,6 +13,7 @@ The following are exercises which involve working with singly linked lists in C.
 | 3-add_node_end.c | Add a node to the end of a singly linked list      |
 | 4-free_list.c    | Frees a linked list                                |
 | 100-first.c      | Execute code before main function                  |
+
 
 ## Author
 *Henry Hsu*
