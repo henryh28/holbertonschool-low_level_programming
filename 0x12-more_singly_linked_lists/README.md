@@ -8,5 +8,7 @@
 
 3-add_nodeint_end.c   - Add a node to the end of a linked list
 
+4-free_listint.c      - Frees memory in use by linked list argument
+
 
 
