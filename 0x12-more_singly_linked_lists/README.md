@@ -18,4 +18,5 @@
 
 8-sum_listint.c       - Return sum of value from all nodes in linked list argument
 
+9-insert_nodeint.c    - Insert a node into linked list at index value
 
