@@ -20,3 +20,5 @@
 
 9-insert_nodeint.c    - Insert a node into linked list at index value
 
+10-delete_nodeint.c   - Delete a node from linked list at index value
+
