@@ -10,5 +10,6 @@
 
 4-free_listint.c      - Frees memory in use by linked list argument
 
+5-free_listint2.c     - Frees memory in use by linked list argument and sets its head to NULL
 
 
