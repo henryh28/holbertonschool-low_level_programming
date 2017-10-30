@@ -12,4 +12,5 @@
 
 5-free_listint2.c     - Frees memory in use by linked list argument and sets its head to NULL
 
+6-pop_listint.c       - Perform standard pop operation on linked list and return value of removed node
 
