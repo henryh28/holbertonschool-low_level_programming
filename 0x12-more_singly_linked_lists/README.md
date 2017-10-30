@@ -14,3 +14,4 @@
 
 6-pop_listint.c       - Perform standard pop operation on linked list and return value of removed node
 
+7-get_nodeint.c       - Search linked list argument and return node at index argument
