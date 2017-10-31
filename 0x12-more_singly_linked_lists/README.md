@@ -22,3 +22,4 @@
 
 10-delete_nodeint.c   - Delete a node from linked list at index value
 
+100-reverse_listint.c - Reverses the order of the nodes in linked list
