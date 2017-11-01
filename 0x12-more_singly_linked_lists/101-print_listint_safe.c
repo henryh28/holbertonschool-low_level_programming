@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t total = 0, i = 0;
 	listint_t *right, *left = NULL, *current = (listint_t *)head;
 	/* nasty array size declaraction due to exercise constraints */
-	void *mem[99] = {0};
+	void *mem[200] = {0};
 
 	while (current != NULL)
 	{
