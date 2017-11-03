@@ -6,5 +6,6 @@
 
 3-set_bit.c            - Sets the bit value of number at index to 1
 
+4-clear_bit.c          - Sets the bit value of number at index to 0
 
 
