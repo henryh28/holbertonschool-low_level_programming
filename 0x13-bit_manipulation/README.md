@@ -2,6 +2,7 @@
 
 1-print_binary.c       - Prints binary representation of a number
 
+2-get_bit.c            - Get the nth bit of an integer argument
 
 
 
