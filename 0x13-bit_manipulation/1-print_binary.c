@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 
 	if (digits > sizeof(long int) * 8)
 	{
-		digits = sizeof(long int) * 8;
+		digits = (sizeof(long int) * 8) - 1;
 	}
 
 	while (digits--)
