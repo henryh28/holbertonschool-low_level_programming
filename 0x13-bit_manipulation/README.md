@@ -4,5 +4,7 @@
 
 2-get_bit.c            - Get the nth bit of an integer argument
 
+3-set_bit.c            - Sets the bit value of number at index to 1
+
 
 
