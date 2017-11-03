@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	int digits = 0, i;
 	unsigned long int dupe = n;
 
-	while (dupe >>= 1)
+	while ((dupe >>= 1) > 0)
 	{
 		digits++;
 	}
