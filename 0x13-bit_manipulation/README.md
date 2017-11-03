@@ -10,6 +10,7 @@ The goal of these exercises is to foster a basic understanding of bitwise operat
 | 3-set_bit.c        | - Sets the bit value of number at index to 1      |
 | 4-clear_bit.c      | - Sets the bit value of number at index to 0      |
 | 5-flip_bits.c      | - Count bits needed to turn 1st argument into 2nd |
+|100-get_endianness.c| - Return the endian status of the environment     |
 
 ## Author
 Henry Hsu
