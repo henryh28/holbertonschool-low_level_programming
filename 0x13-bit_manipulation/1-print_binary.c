@@ -1,5 +1,6 @@
 #include "holberton.h"
 
+#include <stdio.h>
 /**
  * print_binary     - Converts and outputs @n as binary
  *
@@ -8,19 +9,16 @@
 
 void print_binary(unsigned long int n)
 {
-	int digits = 0, i;
-	unsigned long int dupe = n;
+	unsigned long int mask = 1;
+	int digits = 1;
 
-	while ((dupe >>= 1) > 0)
+	while (n >> digits)
 	{
 		digits++;
 	}
 
-	for (i = 1 << digits; i != 0; i >>= 1)
+	while (digits--)
 	{
-		_putchar(i & n ? '1' : '0');
+		_putchar(((mask << digits) & n) ? '1' : '0');
 	}
 }
-
-/* Reference: https://stackoverflow.com/questions/19254118/ */
-/* convert-from-base-10-to-base-2-using-bitwise-operations */
