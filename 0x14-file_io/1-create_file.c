@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-#include <stdio.h>
-
 /**
  * create_file   - Create a file and write @text_content into it
  *
