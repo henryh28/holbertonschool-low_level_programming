@@ -14,7 +14,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int file_desc, i = 0, write_status;
+	int file_desc, i = 0, write_status, close_status;
 
 	if (filename == NULL)
 	{
@@ -30,13 +30,12 @@ int create_file(const char *filename, char *text_content)
 	for (i = 0; text_content[i] != '\0'; i++)
 		;
 	write_status = write(file_desc, text_content, i);
+	close_status = close(file_desc);
 
-	if (write_status == -1)
+	if (write_status == -1 || close_status == -1)
 	{
 		return (-1);
 	}
-
-	close(file_desc);
 
 	return (1);
 }
