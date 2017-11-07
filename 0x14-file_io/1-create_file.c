@@ -27,9 +27,13 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	for (i = 0; text_content[i] != '\0'; i++)
-		;
-	write_status = write(file_desc, text_content, i);
+	if (text_content != NULL)
+	{
+		for (i = 0; text_content[i] != '\0'; i++)
+			;
+		write_status = write(file_desc, text_content, i);
+	}
+
 	close_status = close(file_desc);
 
 	if (write_status == -1 || close_status == -1)
