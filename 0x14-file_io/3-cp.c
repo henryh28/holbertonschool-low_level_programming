@@ -80,7 +80,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
 	}
-	return (0);
+	return (1);
 }
 
 /* Reference: https://phoenix.goucher.edu/~kelliher/cs43/mar26.html */
