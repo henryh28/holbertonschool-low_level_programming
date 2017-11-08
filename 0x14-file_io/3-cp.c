@@ -11,8 +11,6 @@
 
 void print_error(char *file, int code)
 {
-	printf("handling error %d for file %s\n", code, file);
-
 	if (code == 97)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -66,7 +64,7 @@ int main(int argc, char **argv)
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, permission);
 	if (file_to == -1)
 	{
-		print_error(argv[1], 98);
+		print_error(argv[2], 99);
 	}
 
 	do {
