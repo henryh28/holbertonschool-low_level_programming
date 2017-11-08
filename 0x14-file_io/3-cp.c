@@ -26,11 +26,6 @@ void print_error(char *file, int code)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 	}
 
-	if (code == 100)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", file);
-	}
-
 	exit(code);
 }
 
@@ -51,39 +46,40 @@ int main(int argc, char **argv)
 	mode_t permission = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	if (argc != 3)
-	{
 		print_error("", 97);
-	}
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
-	{
 		print_error(argv[1], 98);
-	}
 
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, permission);
 	if (file_to == -1)
-	{
 		print_error(argv[2], 99);
-	}
 
 	do {
 		chars_left = read(file_from, buffer, BUFFER_SIZE);
+		if (chars_left == -1)
+			print_error(argv[1], 98);
+
 		chars_written = write(file_to, buffer, chars_left);
+		if (chars_written == -1)
+			print_error(argv[2], 99);
+
 		*buffer += chars_written;
 	} while (chars_left > 0);
 
 	close_check = close(file_from);
 	if (close_check == -1)
 	{
-		print_error("-1", 100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
 	}
 	close_check = close(file_to);
 	if (close_check == -1)
 	{
-		print_error("-1", 100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
 	}
-
 	return (0);
 }
 
