@@ -9,7 +9,8 @@
 | 4-free_dlistint.c      | Free all elements of a doubly linked list     |
 | 5-get_dnodeint.c       | Returns nth node of a doubly linked list      |
 | 6-sum_dlistint.c       | Returns sum of all 'n' member in linked list  |
-| 7-insert_dnodeint.c    | Insert a new node at a given position in lis  |
+| 7-insert_dnodeint.c    | Insert a new node at a given position in list |
+| 8-delete_dnodeint.c    | Deletes a node at index from a linked list    |
 
 
 
