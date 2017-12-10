@@ -8,6 +8,7 @@
 | 3-add_dnodeint_end.c   | Add a new node to the end of a linked list    |
 | 4-free_dlistint.c      | Free all elements of a doubly linked list     |
 | 5-get_dnodeint.c       | Returns nth node of a doubly linked list      |
+| 6-sum_dlistint.c       | Returns sum of all 'n' member in linked list  |
 
 
 
