@@ -9,6 +9,7 @@ Implement a hash table in C
 | 2-key_index.c            | Generate an index for use with hash table   |
 | 3-hash_table_set.c       | Add or update entry into hash table         |
 | 4-hash_table_get.c       | Returns value of a key from a hash table    |
+| 5-hash_table_print.c     | Print a hash table                          |
 
 
 
