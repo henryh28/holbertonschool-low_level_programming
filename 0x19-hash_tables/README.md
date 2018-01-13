@@ -10,7 +10,7 @@ Implement a hash table in C
 | 3-hash_table_set.c       | Add or update entry into hash table         |
 | 4-hash_table_get.c       | Returns value of a key from a hash table    |
 | 5-hash_table_print.c     | Print a hash table                          |
-
+| 6-hash_table_delete.c    | Delete a hash table                         |
 
 
 ## Author
