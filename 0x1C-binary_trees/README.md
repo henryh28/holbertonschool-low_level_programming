@@ -23,6 +23,7 @@ Working with Binary Trees. Again.
 | 16-binary_tree_is_perfect.c  | Checks if binary tree is perfect                                        |
 | 17-binary_tree_sibling.c     | Finds the sibling of a node in a binary tree                            |
 | 18-binary_tree_uncle.c       | Finds the uncle of a node in a binary tree                              |
+| 100-binary_trees_ancestor.c  | Find the lowest common ancestor of two nodes in a binary tree           |
 
 
 ## Author
