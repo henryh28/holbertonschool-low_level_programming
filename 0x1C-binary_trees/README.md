@@ -19,7 +19,10 @@ Working with Binary Trees. Again.
 | 12-binary_tree_leaves.c      | Counts the number of leaf nodes in a binary tree                        |
 | 13-binary_tree_nodes.c       | Counts the number of nodes with at least 1 child in a binary tree       |
 | 14-binary_tree_balance.c     | Measures the balance factor of a binary tree                            |
-
+| 15-binary_tree_is_full.c     | Checks if binary tree is full                                           |
+| 16-binary_tree_is_perfect.c  | Checks if binary tree is perfect                                        |
+| 17-binary_tree_sibling.c     | Finds the sibling of a node in a binary tree                            |
+| 18-binary_tree_uncle.c       | Finds the uncle of a node in a binary tree                              |
 
 
 ## Author
