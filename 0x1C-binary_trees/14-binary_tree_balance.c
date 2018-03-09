@@ -14,6 +14,11 @@ int binary_tree_balance(const binary_tree_t *tree)
 {
 	int left = 0, right = 0;
 
+	if (!tree)
+	{
+		return (0);
+	}
+
 	if (tree->left)
 	{
 		left = binary_tree_height(tree->left) + 1;
@@ -24,5 +29,5 @@ int binary_tree_balance(const binary_tree_t *tree)
 		right = binary_tree_height(tree->right) + 1;
 	}
 
-	return (!tree ? 0 : left - right);
+	return (left - right);
 }
