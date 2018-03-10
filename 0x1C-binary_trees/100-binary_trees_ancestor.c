@@ -23,14 +23,20 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		return ((binary_tree_t *)first);
 	}
 
-	while (first->parent)
+	while (first)
 	{
-		while (second->parent)
+		if (first->parent == second)
+		{
+			return ((binary_tree_t *)second);
+		}
+
+		while (second)
 		{
 			if (second->parent == first)
 			{
 				return ((binary_tree_t *)first);
 			}
+
 
 			if (second->parent == first->parent)
 			{
